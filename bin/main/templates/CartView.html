@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>CartView</title>
+</head>
+<body>
+<h1>注文リスト</h1>
+	<table border="1" style="border-collapse: collapse">
+		<tr>
+			<th>商品ID</th>
+			<th>商品名</th>
+			<th>価格（円）</th>
+			<th>個数</th>
+		</tr>
+
+		<tr th:each="order: ${orderList}">
+			<td th:text="${order.itemId}" />
+			<td th:text="${order.name}" />
+			<td th:text="${order.price}" />
+			<td th:text="${order.num}" />
+		</tr>
+	</table>
+	<br/>
+</body>
+</html>
