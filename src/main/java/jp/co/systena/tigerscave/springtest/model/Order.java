@@ -6,11 +6,8 @@ public class Order {
   private int price;
   private int num;
 
-  public Order(int ITEMID, String NAME, int PRICE, int NUM) {
-    itemId = ITEMID;
-    name = NAME;
-    price = PRICE;
-    num = NUM;
+  public Order() {
+
   }
 
   public int getItemId() {
@@ -36,6 +33,7 @@ public class Order {
   public void setPrice(int price) {
     this.price = price;
   }
+
   public int getNum() {
     return this.num;
   }

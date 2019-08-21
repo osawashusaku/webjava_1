@@ -1,33 +1,33 @@
 package jp.co.systena.tigerscave.springtest.model;
 
 public class Listform {
-  private int itemId;
-  private String name;
-  private int price;
+  private int[] itemId;
+  private String[] name;
+  private int[] price;
   private int[] num;
 
-  public int getItemId() {
+  public int[] getItemId() {
     return this.itemId;
   }
 
-  public void setItemId(int ItemId) {
+  public void setItemId(int[] ItemId) {
     this.itemId = ItemId;
   }
 
-  public String getName() {
+  public String[] getName() {
     return this.name;
   }
 
-  public void setName(String Name) {
-    this.name = Name;
+  public void setName(String[] name) {
+    this.name = name;
   }
 
-  public int getPrice() {
-    return price;
+  public int[] getPrice() {
+    return this.price;
   }
 
-  public void setPrice(int Price) {
-    this.price = Price;
+  public void setPrice(int[] price) {
+    this.price = price;
   }
 
   public int[] getNum() {
@@ -37,4 +37,5 @@ public class Listform {
   public void setNum(int[] Num) {
     this.num = Num;
   }
+
 }

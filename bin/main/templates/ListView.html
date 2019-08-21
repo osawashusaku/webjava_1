@@ -19,11 +19,15 @@
 			<td th:text="${item.itemId}" />
 			<td th:text="${item.name}" />
 			<td th:text="${item.price}" />
-			<td><input type="text" name="num" value="0" /></td>
+			<td><input type="text" name="orderNum" value="0" /></td>
+	    	<input type="hidden" name="orderId" th:value="${item.itemId}"/>
+	    	<input type="hidden" name="orderName" th:value="${item.name}"/>
+	    	<input type="hidden" name="orderPrice" th:value="${item.price}"/>
+
 		</tr>
 	</table>
 	<br/>
-	<input type="submit" value="カートに入れる" />
+		<input type="submit" value="カートに追加" />
 	</form>
 </body>
 </html>
